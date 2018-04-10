@@ -1,3 +1,5 @@
+module.exports = Letter;
+
 function Letter(character, guessed) {
     this.character = character;
     this.guessed = guessed;
@@ -20,5 +22,3 @@ Letter.prototype.checkCharacter = function (guess) {
 
 var newLetter = new Letter("a", true);
 console.log(newLetter.printCharacter());
-
-module.exports
