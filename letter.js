@@ -20,3 +20,5 @@ Letter.prototype.checkCharacter = function (guess) {
 
 var newLetter = new Letter("a", true);
 console.log(newLetter.printCharacter());
+
+module.exports

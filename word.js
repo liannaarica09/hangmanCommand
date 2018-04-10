@@ -2,7 +2,7 @@ function Word(letters) {
     this.letters = letters;
 }
 
-Word.displayWord = function () {
+Word.displayWord.toString = function () {
 
 };
 Word.check = function () {};
