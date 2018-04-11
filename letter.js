@@ -1,8 +1,8 @@
 module.exports = Letter;
 
 function Letter(character, guessed) {
-    this.character = character;
-    this.guessed = guessed;
+    this.character = character.toLowerCase();
+    this.guessed = false;
 }
 
 Letter.prototype.printCharacter = function () {
@@ -16,9 +16,7 @@ Letter.prototype.printCharacter = function () {
 };
 Letter.prototype.checkCharacter = function (guess) {
     if (guess === this.character) {
-        this.guessed = true;
+        console.log("true");
+        return true;
     }
 };
-
-var newLetter = new Letter("a", true);
-console.log(newLetter.printCharacter());

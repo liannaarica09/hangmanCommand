@@ -72,9 +72,22 @@ function choseWord() {
     wordChoice = wordArry[Math.floor(Math.random() * wordArry.length)];
 }
 
-function guessRepeat() {}
+function play() {
+    inquirer.prompt([{
+        name: "letterChoice",
+        message: "Guess a letter"
+    }]).then(data => {
+        if (wordCoice == word.displayWord()) {
+            console.log("You Win!");
+        } else {
 
-function winCheck() {}
+        }
+    });
+}
+
+function guessRepeat(guess) {
+
+}
 
 function reset() {}
 
